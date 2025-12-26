@@ -54,13 +54,13 @@ scrollToTopBtn.addEventListener('click', () => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
-        
+
         // Skip if href is just "#"
         if (href === '#') {
             e.preventDefault();
             return;
         }
-        
+
         const target = document.querySelector(href);
         if (target) {
             e.preventDefault();
@@ -79,17 +79,17 @@ const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
     // Get form data
     const formData = new FormData(contactForm);
     const data = Object.fromEntries(formData);
-    
+
     // Here you would typically send the data to a server
     console.log('Form submitted:', data);
-    
+
     // Show success message (you can customize this)
     alert('¡Gracias por contactarnos! Te responderemos pronto.');
-    
+
     // Reset form
     contactForm.reset();
 });
@@ -102,15 +102,15 @@ const newsletterForm = document.querySelector('.footer-newsletter-form');
 if (newsletterForm) {
     newsletterForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const email = newsletterForm.querySelector('input[type="email"]').value;
-        
+
         // Here you would typically send the email to a server
         console.log('Newsletter subscription:', email);
-        
+
         // Show success message
         alert('¡Gracias por suscribirte! Recibirás nuestras novedades pronto.');
-        
+
         // Reset form
         newsletterForm.reset();
     });
@@ -147,7 +147,7 @@ document.querySelectorAll('.program-card, .pricing-card, .testimonial-card, .hig
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const heroContent = document.querySelector('.hero-content');
-    
+
     if (heroContent && scrolled < window.innerHeight) {
         heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
         heroContent.style.opacity = 1 - (scrolled / window.innerHeight);
@@ -178,7 +178,7 @@ window.addEventListener('load', () => {
 // CURSOR ANIMATION ON BUTTONS
 // ================================
 document.querySelectorAll('.btn, .card-button, .pricing-button').forEach(button => {
-    button.addEventListener('mouseenter', function(e) {
+    button.addEventListener('mouseenter', function (e) {
         const ripple = document.createElement('span');
         ripple.style.position = 'absolute';
         ripple.style.width = '0';
@@ -189,25 +189,25 @@ document.querySelectorAll('.btn, .card-button, .pricing-button').forEach(button 
         ripple.style.pointerEvents = 'none';
         ripple.style.transition = 'width 0.6s, height 0.6s, opacity 0.6s';
         ripple.style.opacity = '1';
-        
+
         this.style.position = 'relative';
         this.style.overflow = 'hidden';
         this.appendChild(ripple);
-        
+
         const rect = this.getBoundingClientRect();
         const size = Math.max(rect.width, rect.height);
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
-        
+
         ripple.style.left = x + 'px';
         ripple.style.top = y + 'px';
-        
+
         setTimeout(() => {
             ripple.style.width = size * 2 + 'px';
             ripple.style.height = size * 2 + 'px';
             ripple.style.opacity = '0';
         }, 0);
-        
+
         setTimeout(() => {
             ripple.remove();
         }, 600);
@@ -221,7 +221,7 @@ function animateCounter(element, target, duration = 2000) {
     const start = 0;
     const increment = target / (duration / 16);
     let current = start;
-    
+
     const timer = setInterval(() => {
         current += increment;
         if (current >= target) {
@@ -255,12 +255,12 @@ const sections = document.querySelectorAll('section[id]');
 
 function highlightNavLink() {
     const scrollPosition = window.scrollY + 100;
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
         const sectionId = section.getAttribute('id');
-        
+
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
@@ -295,5 +295,168 @@ if ('IntersectionObserver' in window) {
         imageObserver.observe(img);
     });
 }
+
+// ================================
+// LANGUAGE SWITCHER
+// ================================
+const translations = {
+    es: {
+        // Navigation
+        navHome: 'Inicio',
+        navPrograms: 'Programas',
+        navAbout: 'Sobre Mí',
+        navTestimonials: 'Testimonios',
+        navContact: 'Contacto',
+        navCTA: 'Empezar Ahora',
+
+        // Hero Section
+        heroBadge: 'Entrenamiento profesional de calistenia',
+        heroTitle: 'Transforma Tu Cuerpo',
+        heroTitleGradient: 'Con Calistenia',
+        heroDescription: 'Alcanza tus objetivos fitness con programas personalizados, coaching online, y entrenamientos presenciales diseñados por expertos en calistenia.',
+        heroButton1: 'Explorar Programas',
+        heroButton2: 'Conocer Más',
+        stat1Label: 'Alumnos Activos',
+        stat2Label: 'Años Experiencia',
+        stat3Label: 'Satisfacción',
+
+        // Programs Section
+        programsTag: 'Nuestros Servicios',
+        programsTitle: 'Programas de ',
+        programsTitleGradient: 'Entrenamiento',
+        programsDescription: 'Elige el programa que mejor se adapte a tus necesidades y objetivos. Todos diseñados para llevarte al siguiente nivel.',
+
+        // Footer
+        footerText: 'Todos los derechos reservados.',
+        newsletterText: 'Recibe tips, consejos y ofertas exclusivas',
+
+        // Alerts
+        contactSuccess: '¡Gracias por contactarnos! Te responderemos pronto.',
+        newsletterSuccess: '¡Gracias por suscribirte! Recibirás nuestras novedades pronto.'
+    },
+    en: {
+        // Navigation
+        navHome: 'Home',
+        navPrograms: 'Programs',
+        navAbout: 'About',
+        navTestimonials: 'Testimonials',
+        navContact: 'Contact',
+        navCTA: 'Start Now',
+
+        // Hero Section
+        heroBadge: 'Professional calisthenics training',
+        heroTitle: 'Transform Your Body',
+        heroTitleGradient: 'With Calisthenics',
+        heroDescription: 'Achieve your fitness goals with personalized programs, online coaching, and in-person training designed by calisthenics experts.',
+        heroButton1: 'Explore Programs',
+        heroButton2: 'Learn More',
+        stat1Label: 'Active Students',
+        stat2Label: 'Years Experience',
+        stat3Label: 'Satisfaction',
+
+        // Programs Section
+        programsTag: 'Our Services',
+        programsTitle: '',
+        programsTitleGradient: 'Training Programs',
+        programsDescription: 'Choose the program that best fits your needs and goals. All designed to take you to the next level.',
+
+        // Footer
+        footerText: 'All rights reserved.',
+        newsletterText: 'Receive tips, advice and exclusive offers',
+
+        // Alerts
+        contactSuccess: 'Thank you for contacting us! We will respond soon.',
+        newsletterSuccess: 'Thank you for subscribing! You will receive our news soon.'
+    }
+};
+
+let currentLang = 'es';
+
+// Language switcher buttons
+const langButtons = document.querySelectorAll('.lang-btn');
+
+langButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const lang = btn.dataset.lang;
+
+        if (lang === currentLang) return;
+
+        // Update active button
+        langButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Switch language
+        switchLanguage(lang);
+        currentLang = lang;
+
+        // Save preference
+        localStorage.setItem('preferredLanguage', lang);
+    });
+});
+
+function switchLanguage(lang) {
+    // Update elements with data-lang attributes
+    document.querySelectorAll('[data-lang-es][data-lang-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-lang-${lang}`);
+    });
+
+    // Update specific elements
+    const trans = translations[lang];
+
+    // Hero Section
+    const heroBadge = document.querySelector('.hero-badge span:last-child');
+    if (heroBadge) heroBadge.textContent = trans.heroBadge;
+
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) {
+        heroTitle.innerHTML = trans.heroTitle + '<br><span class="gradient-text">' + trans.heroTitleGradient + '</span>';
+    }
+
+    const heroDesc = document.querySelector('.hero-description');
+    if (heroDesc) heroDesc.textContent = trans.heroDescription;
+
+    const heroBtn1 = document.querySelector('.hero-cta .btn-primary span');
+    if (heroBtn1) heroBtn1.textContent = trans.heroButton1;
+
+    const heroBtn2 = document.querySelector('.hero-cta .btn-secondary');
+    if (heroBtn2) heroBtn2.textContent = trans.heroButton2;
+
+    // Stats
+    const statLabels = document.querySelectorAll('.stat-label');
+    if (statLabels[0]) statLabels[0].textContent = trans.stat1Label;
+    if (statLabels[1]) statLabels[1].textContent = trans.stat2Label;
+    if (statLabels[2]) statLabels[2].textContent = trans.stat3Label;
+
+    // Programs Section
+    const programsTag = document.querySelector('.programs .section-tag');
+    if (programsTag) programsTag.textContent = trans.programsTag;
+
+    const programsTitle = document.querySelector('.programs .section-title');
+    if (programsTitle) {
+        programsTitle.innerHTML = trans.programsTitle + '<span class="gradient-text">' + trans.programsTitleGradient + '</span>';
+    }
+
+    const programsDesc = document.querySelector('.programs .section-description');
+    if (programsDesc) programsDesc.textContent = trans.programsDescription;
+
+    // Footer
+    const footerText = document.querySelector('.footer-bottom p');
+    const currentYear = new Date().getFullYear();
+    if (footerText) {
+        footerText.textContent = `© ${currentYear} Sons of Calisthenics. ${trans.footerText}`;
+    }
+
+    const newsletterText = document.querySelector('.footer-newsletter-text');
+    if (newsletterText) newsletterText.textContent = trans.newsletterText;
+}
+
+// Load preferred language from localStorage
+window.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferredLanguage');
+    if (savedLang && savedLang !== 'es') {
+        const btn = document.querySelector(`.lang-btn[data-lang="${savedLang}"]`);
+        if (btn) btn.click();
+    }
+});
 
 console.log('Sons of Calisthenics - Website Loaded Successfully! 💪');

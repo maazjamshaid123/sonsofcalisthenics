@@ -350,6 +350,37 @@ section {
     transition: all var(--transition-base);
 }
 
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.25rem;
+    background: rgba(255, 107, 53, 0.1);
+    border-radius: var(--radius-md);
+}
+
+.lang-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-dark);
+    background: transparent;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.lang-btn:hover {
+    background: rgba(255, 107, 53, 0.2);
+}
+
+.lang-btn.active {
+    background: var(--gradient-primary);
+    color: var(--color-white);
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+}
+
 /* ================================
    HERO SECTION
    ================================ */
