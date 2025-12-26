@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sons of Calisthenics - Transform your body with professional calisthenics training. Online coaching, courses, and personalized programs.">
+    <title>Sons of Calisthenics - Transform Your Body</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">SONS OF CALISTHENICS</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">Inicio</a>
+                <a href="#programs" class="nav-link">Programas</a>
+                <a href="#about" class="nav-link">Sobre Mí</a>
+                <a href="#testimonios" class="nav-link">Testimonios</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+                <a href="#" class="nav-link cta-button">Empezar Ahora</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <!-- YouTube Video Background -->
+            <iframe id="heroVideo"
+                src="https://www.youtube.com/embed/IMfBuINeJIQ?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&modestbranding=1&playlist=IMfBuINeJIQ&playsinline=1"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+                style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); pointer-events: none; object-fit: cover;">
+            </iframe>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">🏆</span>
+                <span>Entrenamiento profesional de calistenia</span>
+            </div>
+            <h1 class="hero-title">
+                Transforma Tu Cuerpo<br>
+                <span class="gradient-text">Con Calistenia</span>
+            </h1>
+            <p class="hero-description">
+                Alcanza tus objetivos fitness con programas personalizados, coaching online,
+                y entrenamientos presenciales diseñados por expertos en calistenia.
+            </p>
+            <div class="hero-cta">
+                <a href="#programs" class="btn btn-primary">
+                    <span>Explorar Programas</span>
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn-secondary">Conocer Más</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Alumnos Activos</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Años Experiencia</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfacción</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestros Servicios</span>
+                <h2 class="section-title">Programas de <span class="gradient-text">Entrenamiento</span></h2>
+                <p class="section-description">
+                    Elige el programa que mejor se adapte a tus necesidades y objetivos.
+                    Todos diseñados para llevarte al siguiente nivel.
+                </p>
+            </div>
+
+            <div class="programs-grid">
+                <!-- Online Coaching -->
+                <div class="program-card featured">
+                    <div class="card-badge">Más Popular</div>
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2" />
+                            <path d="M18 24L22 28L30 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Coaching Online</h3>
+                    <p class="card-description">
+                        Entrenamiento personalizado con rutinas y feedback semanales.
+                        Perfecto para ti si necesitas guía y soporte en tiempo real.
+                    </p>
+                    <ul class="card-features">
+                        <li>✓ Programación mes a mes</li>
+                        <li>✓ Feedback semanal personalizado</li>
+                        <li>✓ Contacto 24/7</li>
+                        <li>✓ Cancela cuando quieras</li>
+                    </ul>
+                    <a href="#" class="card-button">
+                        <span>Empezar Ya</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Cursos Paso a Paso -->
+                <div class="program-card">
+                    <div class="card-image">
+                        <img src="images/handstand.jpg" alt="Cursos Paso a Paso - Calistenia"
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px 12px 0 0;">
+                    </div>
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="10" y="10" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2" />
+                            <path d="M20 22L24 26L28 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Cursos Paso a Paso</h3>
+                    <p class="card-description">
+                        Programas autoguiados de 6-8 semanas con rutinas, videos, tips y más.
+                        Entrena cuando quieras con objetivos específicos.
+                    </p>
+                    <ul class="card-features">
+                        <li>✓ Acceso ilimitado</li>
+                        <li>✓ Videos explicativos</li>
+                        <li>✓ Objetivos específicos</li>
+                        <li>✓ Entrena a tu ritmo</li>
+                    </ul>
+                    <a href="#" class="card-button">
+                        <span>Ver Cursos</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Enciclopedia -->
+                <div class="program-card">
+                    <div class="card-image">
+                        <img src="images/enciclopedia.jpg" alt="Enciclopedia de Calistenia - +150 Videos"
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px 12px 0 0;">
+                    </div>
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 10V38M10 24H38" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Enciclopedia de Calistenia</h3>
+                    <p class="card-description">
+                        ¿Estancado? Accede a +150 videos de ejercicios explicados con
+                        progresiones para todos los niveles.
+                    </p>
+                    <ul class="card-features">
+                        <li>✓ +150 videos de ejercicios</li>
+                        <li>✓ Todos los niveles</li>
+                        <li>✓ Progresiones detalladas</li>
+                        <li>✓ Acceso ilimitado</li>
+                    </ul>
+                    <a href="#" class="card-button">
+                        <span>Explorar</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- In-Person Training -->
+            <div class="in-person-section">
+                <h3 class="subsection-title">Programas de Entrenamiento Presencial</h3>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4 class="pricing-title">Sesión Individual</h4>
+                            <div class="pricing-price">
+                                <span class="price-amount">45</span>
+                                <span class="price-currency">€</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>1 Sesión Presencial Privada</li>
+                            <li>Plan Personalizado de Entrenamiento</li>
+                            <li>Asesoramiento Nutricional</li>
+                            <li>Contacto 24/7 (MAX 1 MES)</li>
+                        </ul>
+                        <a href="#" class="pricing-button">Comprar</a>
+                    </div>
+
+                    <div class="pricing-card popular">
+                        <div class="pricing-badge">Mejor Valor</div>
+                        <div class="pricing-image">
+                            <img src="images/workout_domination.jpg" alt="Workout Domination - Entrenamiento Presencial"
+                                style="width: 100%; height: 150px; object-fit: cover; border-radius: 12px 12px 0 0; margin-bottom: 1rem;">
+                        </div>
+                        <div class="pricing-header">
+                            <h4 class="pricing-title">Workout Domination</h4>
+                            <div class="pricing-price">
+                                <span class="price-amount">140</span>
+                                <span class="price-currency">€</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Pack 4 Sesiones Presenciales</li>
+                            <li>Plan Personalizado de Entrenamiento</li>
+                            <li>Asesoramiento Nutricional</li>
+                            <li>Contacto 24/7 (MAX 1 MES)</li>
+                        </ul>
+                        <a href="#" class="pricing-button">Comprar</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4 class="pricing-title">Advanced Workout</h4>
+                            <div class="pricing-price">
+                                <span class="price-amount">299</span>
+                                <span class="price-currency">€</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Pack 10 Sesiones Presenciales</li>
+                            <li>Plan Personalizado de Entrenamiento</li>
+                            <li>Asesoramiento Nutricional</li>
+                            <li>Contacto 24/7 (MAX 2 MESES)</li>
+                        </ul>
+                        <a href="#" class="pricing-button">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Library Showcase Section -->
+    <section class="video-showcase" id="video-library">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contenido Exclusivo</span>
+                <h2 class="section-title">Accede a Nuestra <span class="gradient-text">Biblioteca de Videos</span></h2>
+                <p class="section-description">
+                    Más de 150 videos detallados con técnicas, progresiones y ejercicios de calistenia para todos los
+                    niveles
+                </p>
+            </div>
+            <div class="showcase-image">
+                <img src="images/video_library.png" alt="Biblioteca de Videos de Calistenia - +150 Videos Explicados"
+                    style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/partner_training.jpg" alt="Entrenamiento de Calistenia en Pareja"
+                        style="width: 100%; height: 500px; object-fit: cover; border-radius: 12px;">
+                    <div class="about-decoration"></div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">Sobre Mí</span>
+                    <h2 class="section-title">Tu Coach de <span class="gradient-text">Calistenia</span></h2>
+                    <p class="about-text">
+                        Con más de 10 años de experiencia en calistenia y entrenamiento funcional,
+                        he ayudado a cientos de personas a transformar sus cuerpos y alcanzar sus
+                        objetivos fitness.
+                    </p>
+                    <p class="about-text">
+                        Mi filosofía se basa en entrenamientos progresivos, adaptados a cada persona,
+                        combinando técnica, fuerza y control corporal para lograr resultados reales
+                        y sostenibles.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🎯</div>
+                            <div class="highlight-content">
+                                <h4>Metodología Probada</h4>
+                                <p>Sistemas de entrenamiento validados con cientos de alumnos</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">💪</div>
+                            <div class="highlight-content">
+                                <h4>Resultados Garantizados</h4>
+                                <p>98% de satisfacción entre nuestros estudiantes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Contactar Ahora</span>
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">Testimonios</span>
+                <h2 class="section-title">Lo Que Dicen Nuestros <span class="gradient-text">Alumnos</span></h2>
+                <p class="section-description">
+                    Historias reales de transformación y éxito
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Increíble experiencia. En 3 meses logré mi primera muscle-up gracias
+                        a las progresiones personalizadas. El coaching es excepcional."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div class="avatar-placeholder">JD</div>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Juan Díaz</h4>
+                            <p class="author-title">Alumno Online</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Los cursos paso a paso son perfectos. Puedo entrenar a mi ritmo y
+                        los videos son súper claros. Totalmente recomendado."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div class="avatar-placeholder">MG</div>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">María García</h4>
+                            <p class="author-title">Curso Paso a Paso</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Las sesiones presenciales son intensas pero vale cada euro.
+                        He mejorado mi técnica y fuerza enormemente."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div class="avatar-placeholder">CR</div>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Carlos Ruiz</h4>
+                            <p class="author-title">Advanced Workout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Contacto</span>
+                    <h2 class="section-title">¿Listo Para <span class="gradient-text">Empezar?</span></h2>
+                    <p class="contact-description">
+                        Ponte en contacto conmigo y comencemos tu transformación hoy mismo.
+                        Respondo todas las consultas en menos de 24 horas.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <h4>Email</h4>
+                                <p>info@sonsofcalisthenics.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <h4>Teléfono</h4>
+                                <p>+34 XXX XXX XXX</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                                        stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <h4>Ubicación</h4>
+                                <p>Tu ciudad, España</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="program">Programa de Interés</label>
+                            <select id="program" name="program">
+                                <option value="">Selecciona un programa</option>
+                                <option value="coaching">Coaching Online</option>
+                                <option value="cursos">Cursos Paso a Paso</option>
+                                <option value="enciclopedia">Enciclopedia</option>
+                                <option value="presencial">Entrenamiento Presencial</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">
+                            <span>Enviar Mensaje</span>
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-logo">SONS OF CALISTHENICS</h3>
+                    <p class="footer-description">
+                        Transformando cuerpos y vidas a través del poder de la calistenia.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#programs">Programas</a></li>
+                        <li><a href="#about">Sobre Mí</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Programas</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Coaching Online</a></li>
+                        <li><a href="#">Cursos Paso a Paso</a></li>
+                        <li><a href="#">Enciclopedia</a></li>
+                        <li><a href="#">Presencial</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-newsletter-text">
+                        Recibe tips, consejos y ofertas exclusivas
+                    </p>
+                    <form class="footer-newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit" aria-label="Subscribe">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sons of Calisthenics. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
